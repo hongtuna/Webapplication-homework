@@ -298,7 +298,7 @@ try{
     console.log('마무리');
 
 }
-
+*/
 
 //비동기 함수
 
@@ -366,7 +366,7 @@ new Promise((resolve,reject)=>
         console.log("error");
     });
 
-*/
+
 
 function asyncTest(v,cb)
 {

@@ -22,7 +22,6 @@ for (let i = 0; i<list.length; i++)
         o["index_"+i]=list[i];
     }  
 }
-
 console.log(o);
 
 
