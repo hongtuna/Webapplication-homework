@@ -74,7 +74,6 @@ function foo()
 foo();
 
 
-
 console.log("hello world");
 if (1>10) //첫번째 조건이 맞으면 다음거 건너뜀
 { //괄호 필수

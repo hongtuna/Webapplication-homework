@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <script>
+        
+            $(document).ready(()=>//window.onload = () => 
+            {
+            var h1Title = $("#title");   //document.getElementById("title");
+            //alert(h1Title[0].textContent);
+            //alert(h1Title.text());
+            h1Title.text("hello world");
+
+
+
+            var span = $(".spanclass");  //document.getElementsByClassName("spanclass");
+            if (span.length==0) return alert("못찾");
+            //span[0].textContent = "<b>test</b>";
+            //span[0].innerHTML = "<b>test</b>";
+            span.html("<b>test</b>");
+
+
+           
+            //span[0].style.backgroundColor = "red";
+            span.css("backgroundColor","red");
+
+
+            //alert(span[0].getAttribute("data-value"));
+            alert(span.attr("data-value"));
+
+
+            var img = document.getElementsByTagName("img");
+            img = $(img); //jquery객체로 바뀜 
+
+            img.attr("src","http://via.placeholder.com/300x90.png?text=hello hello") 
+            //img[0].src = "http://via.placeholder.com/300x90.png?text=hello hello"
+                
+            });
+        //};
+
+        function onErrorImg(img){
+            //console.log(img)
+            img.src="http://via.placeholder.com/300x90.png?text=On_Error_Image"
+        }
+
+        function querySelect(){
+            //alert("test");
+            var sel = prompt("query?");
+            console.log(sel);
+            //var selectedTag = document.querySelector(sel);
+            var selectedTags = document.querySelectorAll(sel);
+            selectedTags.forEach((tag,index) => { //하나씩 실행시킴
+                tag.style.color=["pink" , "red" , "yellow"][index % 3];
+            });
+
+            selectedTag.style.color="pink"; //선택된 태그색 달라짐
+        }
+
+        
+        </script>
+
+        
+</head>
+
+<body>
+
+
+    <h1 id = "title">5주차 실습</h1>
+    <span class = "spanclass" data-value="1">test</span>
+    <img src = "http://via.placeholder.com/300x90.png" onerror = "onErrorImg(this)" >
+    <a href = "javascript:querySelect();">셀렉터 테스트</a><br>
+    <a href = "javascript:querySelect();">셀렉터 테스트</a><br>
+    <a href = "javascript:querySelect();">셀렉터 테스트</a><br>
+    <a href = "javascript:querySelect();">셀렉터 테스트</a><br>
+    <a href = "javascript:querySelect();">셀렉터 테스트</a><br>
+    <a href = "javascript:querySelect();">셀렉터 테스트</a><br>
+
+
+
+</body>
+</html>
