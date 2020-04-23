@@ -18,7 +18,7 @@ ul>li:nth-child(3){ color: red; }
 
 ul>li:last-child>span{ color: red; }
 
-tbody>tr:nth-child(3)>td{ color: red; }
+tbody>tr:nth-child(odd)>td{ color: red; }
 
 label[for="rr2"]{ color: red; }
 
