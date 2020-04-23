@@ -36,7 +36,6 @@ function addMessage(message, isSystem =false,isSelf=true)
     var element = chatBox[0];
     element.scrollTop = element.scrollHeight - element.clientHeight;
     
-   
 } 
 
 function clear(message)
