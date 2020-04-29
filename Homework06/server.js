@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const moment = require("moment");
 
-
 app.use(express.urlencoded({extended:true}));
 app.set("views",__dirname + "/views");
 app.set("view engine","ejs");
