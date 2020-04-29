@@ -22,6 +22,7 @@ function onEnterMessage()
 
 function addMessage(message, isSystem =false,isSelf=true)
 {
+    if(message==null ||message.trim()=="" ) return;
     var chatBox = $(".chat-box");
     
     var newMessage = $(".chat-box .message.template").clone();

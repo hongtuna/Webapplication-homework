@@ -22,7 +22,11 @@ html, body {
 }
 
 .chat-box > .message.self > img{
-    float : right;
+    display : none;
+}
+
+.message.self > .text {
+    float:right;
 }
 
 .input-message{
