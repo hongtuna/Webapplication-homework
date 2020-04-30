@@ -103,7 +103,7 @@ function loadMessages(){
             let type = data.nick == nick? 1 : 2; //data의 닉네임이 동일하면 1번(자신) 아니면 2번
             if (place==data.place)
                 addMessage(data.nick, data.place,data.message, data.date, type);
-            else console.log("새로운방");
+            else console.log("새로운 방"); 
         });
     });
 

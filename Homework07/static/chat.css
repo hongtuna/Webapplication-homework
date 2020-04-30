@@ -17,7 +17,7 @@ html, body {
 }
 
 .chat-box > .message.system > img{
-    display : none;
+    display : none; 
 
 }
 

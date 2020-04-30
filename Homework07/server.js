@@ -58,6 +58,7 @@ app.get("/api/messages", (req, res)=>{
 app.post("/api/pull", (req, res)=>{
     var newMessages = messages.filter(data=>data.date >req.body.date);
     res.json(newMessages);
+    
 })
 
 // app.post("/", (request,response)=>{
